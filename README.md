@@ -1,7 +1,6 @@
 # Credit Risk Segmentation  
 ## Alteryx & Power BI
 
----
 
 ## Overview
 
@@ -11,7 +10,6 @@ Using the German Credit dataset, I designed a transparent scoring framework to s
 
 The goal was to simulate how a consulting team might structure credit data into decision-ready portfolio insights.
 
----
 
 ## Business Context
 
@@ -23,7 +21,6 @@ Given a retail credit portfolio, key questions include:
 
 Instead of building a predictive model, this project focuses on **structured risk segmentation and portfolio analysis**, prioritising transparency and explainability.
 
----
 
 ## Tools Used
 
@@ -31,7 +28,6 @@ Instead of building a predictive model, this project focuses on **structured ris
 - **Power BI Desktop** – Portfolio visualisation
 - **DAX** – Exposure concentration metric
 
----
 
 ## Alteryx Workflow
 
@@ -39,7 +35,6 @@ The workflow follows a structured pipeline:
 
 **Input → Cleaning → Feature Engineering → Risk Scoring → Segmentation → Aggregation → Output**
 
----
 
 ### 1. Data Preparation
 
@@ -49,7 +44,6 @@ The workflow follows a structured pipeline:
 
 This ensured downstream scoring logic remained stable and reproducible.
 
----
 
 ### 2. Risk Feature Engineering
 
@@ -63,7 +57,6 @@ Each qualitative indicator was converted into a numeric risk contribution.
 
 **Purpose:** Simulate short-term financial buffer strength.
 
----
 
 #### Housing Stability
 
@@ -73,7 +66,6 @@ Each qualitative indicator was converted into a numeric risk contribution.
 
 **Purpose:** Reflect structural financial stability.
 
----
 
 #### Employment Level
 
@@ -84,7 +76,6 @@ Job category (0–3) was mapped to a stability gradient:
 
 **Purpose:** Capture employment-driven income stability.
 
----
 
 #### Exposure & Duration
 
@@ -93,7 +84,6 @@ Loan size and repayment duration were segmented into increasing risk brackets.
 - Larger loan → higher capital exposure
 - Longer duration → greater repayment uncertainty
 
----
 
 ### 3. Composite Risk Score
 
@@ -107,7 +97,6 @@ The total score was then mapped into:
 
 This produces a simplified, explainable scorecard model.
 
----
 
 ### 4. Portfolio Aggregation
 
@@ -120,7 +109,6 @@ Using the **Summarize tool** in Alteryx, the portfolio was grouped by Risk Tier 
 
 The final dataset was exported for visualisation in Power BI.
 
----
 
 ## Power BI Dashboard
 
@@ -132,7 +120,6 @@ The dashboard presents a portfolio-level risk overview.
 - Total Customers: 1000
 - High Risk Exposure: 20%
 
----
 
 ### Key Observations
 
